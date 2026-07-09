@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate to HopeBridge Foundation to help provide food, clothing, toys, and school supplies to vulnerable children.">
+    <title>Donate | HopeBridge Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+        <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo">HopeBridge Foundation</a>
+        <ul class="nav-links" id="primary-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="donate.html">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="mission">
+        <div class="container mission-grid">
+            <div class="mission-content">
+                <span>DONATE</span>
+                <h2>Make a gift that changes lives today.</h2>
+                <p>
+                    Your donation helps provide food, clothing, school supplies, and safe shelter for children across Africa. Every gift supports a child in need.
+                </p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+            <div class="mission-image">
+                <img src="images/hero.jpg" alt="Donation support" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="donations">
+        <div class="container">
+            <div class="section-title">
+                <span>WAYS TO HELP</span>
+                <h2>Donate items, funds, or your time.</h2>
+            </div>
+            <div class="donation-grid">
+                <div class="donation-card" data-donation-type="Monetary Gifts">
+                    <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>Monetary Gifts</h3>
+                    <p>Support programs with a flexible financial contribution.</p>
+                    <button class="btn donate-btn" type="button">Donate Now</button>
+                </div>
+                <div class="donation-card" data-donation-type="Clothing">
+                    <div class="icon"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Clothing</h3>
+                    <p>Send clean clothes for children and families in need.</p>
+                    <button class="btn donate-btn" type="button">Donate Now</button>
+                </div>
+                <div class="donation-card" data-donation-type="Food">
+                    <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <h3>Food</h3>
+                    <p>Provide nutritious meals for growing children.</p>
+                    <button class="btn donate-btn" type="button">Donate Now</button>
+                </div>
+                <div class="donation-card" data-donation-type="School Supplies">
+                    <div class="icon"><i class="fa-solid fa-book"></i></div>
+                    <h3>School Supplies</h3>
+                    <p>Donate books, bags, stationery, and educational materials.</p>
+                    <button class="btn donate-btn" type="button">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="payment-modal" id="paymentModal" aria-hidden="true">
+    <div class="payment-modal-backdrop" data-close-modal></div>
+    <div class="payment-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+        <button class="modal-close" type="button" aria-label="Close donation form" data-close-modal>&times;</button>
+        <h3 id="paymentTitle">Support HopeBridge</h3>
+        <p id="paymentDescription">Choose a donation amount and complete your secure contribution.</p>
+        <form class="payment-form" id="paymentForm">
+            <input type="hidden" id="donationType" name="donationType">
+            <label>
+                <span>Donation amount</span>
+                <input type="number" id="donationAmount" name="donationAmount" min="1" step="1" value="50" required>
+            </label>
+            <label>
+                <span>Your name</span>
+                <input type="text" id="donorName" name="donorName" placeholder="Jane Doe" required>
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" id="donorEmail" name="donorEmail" placeholder="you@example.com" required>
+            </label>
+            <label>
+                <span>Country</span>
+                <select id="donorCountry" name="donorCountry" required></select>
+            </label>
+            <label>
+                <span>Payment method</span>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="Card">Card</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="Mobile Money">Mobile Money</option>
+                </select>
+            </label>
+            <button class="btn payment-submit" type="submit">Complete Donation</button>
+            <p class="payment-note">Your donation will be submitted to the HopeBridge backend for processing.</p>
+        </form>
+        <div class="payment-success" id="paymentSuccess" hidden>
+            <h4>Thank you for your support</h4>
+            <p>Your donation request has been prepared. A secure payment link will be sent to your email shortly.</p>
+            <button class="btn" type="button" data-close-modal>Close</button>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-col">
+            <h2>HopeBridge</h2>
+            <p>Bringing hope to vulnerable children through food, clothing, education, and community support.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Port Harcourt, Nigeria</p>
+            <p><i class="fa-solid fa-phone"></i> +234 906 007 1115</p>
+            <p><i class="fa-solid fa-envelope"></i> info@hopebridge.org</p>
+        </div>
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 HopeBridge Foundation. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
