@@ -78,6 +78,24 @@ if (menuBtn && navLinks) {
     });
 }
 
+// Reusable entry animations for design-system components
+const fadeElements = document.querySelectorAll(".fade-up, .fade-in, .zoom, .slide-left, .slide-right");
+
+if ("IntersectionObserver" in window && fadeElements.length) {
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    fadeElements.forEach(element => observer.observe(element));
+} else {
+    fadeElements.forEach(element => element.classList.add("is-visible"));
+}
+
 // Donation modal
 const donationCards = document.querySelectorAll(".donation-card");
 const paymentModal = document.getElementById("paymentModal");
@@ -226,4 +244,6 @@ if (paymentModal) {
             }
         });
     }
+
+    // (No fade-in observer — restored to previous script state)
 }

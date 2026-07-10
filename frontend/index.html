@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
     <meta name="description" content="HopeBridge Foundation supports vulnerable children across Africa through donations and volunteer programs.">
     <title>HopeBridge Foundation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Premium typography: serif headings + subtle script for accents -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home-page">
 <header id="header">
     <nav class="navbar container" aria-label="Main navigation">
         <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
@@ -21,6 +23,7 @@
             <li><a href="donate.html">Donate</a></li>
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a class="nav-cta" href="donate.html">Donate Now</a></li>
         </ul>
     </nav>
 </header>
@@ -28,9 +31,9 @@
     <section class="hero">
         <div class="hero-content container">
             <p class="eyebrow">Hope starts with you</p>
-            <h1>Together, we bring hope to every child.</h1>
+            <h1>Together, we bring <span class="script">hope</span> to every child.</h1>
             <p>
-                Support with food, clothing, education, and safe shelter for orphanages and vulnerable communities in Africa.
+                Support food, clothing, education, and safe shelter for vulnerable children across Africa.
             </p>
             <div class="hero-buttons">
                 <a href="donate.html" class="btn">Donate Now</a>
@@ -38,123 +41,167 @@
             </div>
         </div>
     </section>
-    <section class="mission">
+    <div class="page-bg">
+    <section class="section donate-why">
         <div class="container mission-grid">
-            <div class="mission-image">
+            <div class="mission-image fade-up">
                 <img src="images/impact.jpg" alt="Children receiving donations" loading="lazy">
             </div>
-            <div class="mission-content">
-                <span>OUR MISSION</span>
+            <div class="mission-content fade-up">
+                <span class="section-subtitle">Our Mission</span>
                 <h2>Creating hope through kindness and support.</h2>
                 <p>
                     We believe every child deserves access to food, shelter, education, and a safe place to grow. Through donors and volunteers, we deliver vital supplies to communities that need it most.
                 </p>
-                <a href="about.html" class="btn">Read More</a>
+                <a href="about.html" class="btn-primary">Read More</a>
             </div>
         </div>
     </section>
-    <section class="donations">
+    <section class="section donations ways-to-help">
         <div class="container">
-            <div class="section-title">
-                <span>DONATE TODAY</span>
-                <h2>Choose how you want to help</h2>
+            <div class="section-title section-title--centered">
+                <span>WAYS TO HELP</span>
+                <h2>Donate items, funds, or your time.</h2>
+                <p>Every contribution creates impact for children and families across our communities—whether through a one-time gift, regular support, or hands-on volunteer service.</p>
             </div>
-            <div class="donation-grid">
-                <div class="donation-card">
-                    <div class="icon"><i class="fa-solid fa-shirt"></i></div>
-                    <h3>Clothes</h3>
-                    <p>Donate clean clothes for children and families.</p>
-                </div>
-                <div class="donation-card">
-                    <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
-                    <h3>Food</h3>
-                    <p>Help provide nutritious meals for children in need.</p>
-                </div>
-                <div class="donation-card">
-                    <div class="icon"><i class="fa-solid fa-gift"></i></div>
-                    <h3>Toys</h3>
-                    <p>Bring smiles to children with toys and games.</p>
-                </div>
-                <div class="donation-card">
-                    <div class="icon"><i class="fa-solid fa-book"></i></div>
-                    <h3>School Supplies</h3>
-                    <p>Support education with books, bags, and stationery.</p>
-                </div>
+            <div class="help-grid">
+                <article class="help-card fade-up">
+                    <div class="help-card-icon">
+                        <div class="icon-circle icon-circle--sage">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="help-card-body">
+                        <h3>Fund essential care</h3>
+                        <p>Provide meals, school materials, and emergency relief that help children thrive with dignity.</p>
+                    </div>
+                    <div class="help-card-actions">
+                        <a href="donate.html" class="btn">Donate Now</a>
+                        <a href="about.html" class="help-link">Learn More</a>
+                    </div>
+                </article>
+                <article class="help-card fade-up">
+                    <div class="help-card-icon">
+                        <div class="icon-circle icon-circle--coral">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                    </div>
+                    <div class="help-card-body">
+                        <h3>Give supplies that matter</h3>
+                        <p>Send clothing, hygiene kits, books, and shelter essentials directly to families in need.</p>
+                    </div>
+                    <div class="help-card-actions">
+                        <a href="donate.html" class="btn">Donate Now</a>
+                        <a href="about.html" class="help-link">Learn More</a>
+                    </div>
+                </article>
+                <article class="help-card fade-up">
+                    <div class="help-card-icon">
+                        <div class="icon-circle icon-circle--gold">
+                            <i class="fa-solid fa-hands-helping"></i>
+                        </div>
+                    </div>
+                    <div class="help-card-body">
+                        <h3>Sponsor a child</h3>
+                        <p>Offer steady support that keeps education, nutrition, and hope within reach over time.</p>
+                    </div>
+                    <div class="help-card-actions">
+                        <a href="donate.html" class="btn">Donate Now</a>
+                        <a href="about.html" class="help-link">Learn More</a>
+                    </div>
+                </article>
+                <article class="help-card fade-up">
+                    <div class="help-card-icon">
+                        <div class="icon-circle icon-circle--blue">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="help-card-body">
+                        <h3>Volunteer your time</h3>
+                        <p>Share your skills and presence by supporting outreach, logistics, and community care.</p>
+                    </div>
+                    <div class="help-card-actions">
+                        <a href="volunteer.html" class="btn">Donate Now</a>
+                        <a href="volunteer.html" class="help-link">Learn More</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
-    <section class="how-it-works">
+    <section class="section how-it-works">
         <div class="container">
-            <div class="section-title">
-                <span>HOW IT WORKS</span>
+            <div class="section-title fade-up">
+                <span class="section-subtitle">How It Works</span>
                 <h2>Making an impact is easy</h2>
             </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
+            <div class="timeline fade-up">
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-hand-pointer"></i></div>
                     <h3>Choose a cause</h3>
                     <p>Select what you'd like to donate or support.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-heart"></i></div>
                     <h3>Send support</h3>
-                    <p>Contribute clothes, food, toys, or funds securely.</p>
+                    <p>Contribute clothes, food, toys, tablets, or funds securely.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-truck-fast"></i></div>
                     <h3>We distribute</h3>
                     <p>Our team and volunteers deliver essentials to families.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">4</div>
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-seedling"></i></div>
                     <h3>Lives change</h3>
                     <p>Your generosity brings stability and hope to children.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="stories">
+    <section class="section stories">
         <div class="container">
             <div class="section-title">
                 <span>SUCCESS STORIES</span>
                 <h2>Lives we've touched</h2>
             </div>
             <div class="stories-grid">
-                <div class="story-card">
+                <a class="story-card" href="about.html">
                     <img src="images/impact.jpg" alt="Children with school supplies" loading="lazy">
                     <div class="story-content">
                         <h3>Back to School Campaign</h3>
-                        <p>Over 300 children received school bags, books, and uniforms through our annual outreach.</p>
+                        <p>Over 300 children received school bags, books, Laptops, tablets, uniforms, and scholarships through our annual outreach.</p>
                     </div>
-                </div>
-                <div class="story-card">
+                </a>
+                <a class="story-card" href="about.html">
                     <img src="images/hero.jpg" alt="Food donation" loading="lazy">
                     <div class="story-content">
                         <h3>Community Food Drive</h3>
                         <p>Families and orphanages received food packs donated by generous individuals and businesses.</p>
                     </div>
-                </div>
-                <div class="story-card">
+                </a>
+                <a class="story-card" href="about.html">
                     <img src="images/cta.jpeg" alt="Toy donation" loading="lazy">
                     <div class="story-content">
                         <h3>Christmas Toy Giveaway</h3>
-                        <p>Hundreds of children celebrated Christmas with new toys, games, and unforgettable memories.</p>
+                        <p>Hundreds of children celebrated Christmas with new toys, games, Laptops, phones and unforgettable memories.</p>
                     </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section cta-hero">
+        <div class="container">
+            <div class="cta-hero__content fade-up">
+                <h2>Every donation brings hope</h2>
+                <p>Join thousands of compassionate people making a difference in the lives of children across Africa.</p>
+                <div class="hero-donate__actions">
+                    <a href="donate.html" class="btn-primary">Donate Now</a>
+                    <a href="volunteer.html" class="btn-outline">Become a Volunteer</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cta">
-        <div class="container">
-            <h2>Every donation brings hope</h2>
-            <p>Join thousands of compassionate people making a difference in the lives of children across Africa.</p>
-            <div class="cta-buttons">
-                <a href="donate.html" class="btn">Donate Now</a>
-                <a href="volunteer.html" class="btn-outline">Become a Volunteer</a>
-            </div>
-        </div>
-    </section>
-    <section class="impact">
+    <section class="section impact">
         <div class="container impact-grid">
             <div class="impact-content">
                 <span>OUR IMPACT</span>
@@ -186,6 +233,7 @@
             </div>
         </div>
     </section>
+    </div>
 </main>
 <footer class="footer">
     <div class="container footer-container">

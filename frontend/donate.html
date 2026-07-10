@@ -6,6 +6,7 @@
     <meta name="description" content="Donate to HopeBridge Foundation to help provide food, clothing, toys, and school supplies to vulnerable children.">
     <title>Donate | HopeBridge Foundation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,51 +26,297 @@
     </nav>
 </header>
 <main>
-    <section class="mission">
-        <div class="container mission-grid">
-            <div class="mission-content">
-                <span>DONATE</span>
-                <h2>Make a gift that changes lives today.</h2>
-                <p>
-                    Your donation helps provide food, clothing, school supplies, and safe shelter for children across Africa. Every gift supports a child in need.
-                </p>
-                <a href="contact.html" class="btn">Contact Us</a>
+    <section class="section hero-donate">
+        <div class="container hero-donate__grid">
+            <div class="hero-donate__content fade-up">
+                <span class="section-subtitle">Donate</span>
+                <h1>Make a gift that changes lives.</h1>
+                <p>Your generosity helps provide food, clothing, education, and safe shelter for children and families across Africa. Every donation is a direct act of care, dignity, and hope.</p>
+                <div class="hero-donate__actions">
+                    <a href="#ways-to-help" class="btn-primary">Donate Now</a>
+                    <a href="volunteer.html" class="btn-outline">Become a Volunteer</a>
+                </div>
             </div>
-            <div class="mission-image">
-                <img src="images/hero.jpg" alt="Donation support" loading="lazy">
+            <div class="hero-donate__media fade-up zoom">
+                <img src="images/impact.jpg" alt="Children receiving support from HopeBridge volunteers" loading="eager">
+                <div class="hero-donate__stat hero-donate__stat--top">
+                    <strong>15,000+</strong>
+                    <span>Meals Served</span>
+                </div>
+                <div class="hero-donate__stat hero-donate__stat--bottom">
+                    <strong>2,500+</strong>
+                    <span>Children Helped</span>
+                </div>
+                <div class="hero-donate__stat hero-donate__stat--side">
+                    <strong>500+</strong>
+                    <span>Volunteers</span>
+                </div>
             </div>
         </div>
     </section>
-    <section class="donations">
+
+    <section class="section donate-why">
         <div class="container">
-            <div class="section-title">
-                <span>WAYS TO HELP</span>
-                <h2>Donate items, funds, or your time.</h2>
+            <div class="section-title fade-up">
+                <span class="section-subtitle">Why Donate</span>
+                <h2>Support the essentials that protect childhood.</h2>
+                <p>Every contribution helps create safety, nourishment, education, and belonging for children at critical moments.</p>
             </div>
-            <div class="donation-grid">
-                <div class="donation-card" data-donation-type="Monetary Gifts">
-                    <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                    <h3>Monetary Gifts</h3>
-                    <p>Support programs with a flexible financial contribution.</p>
-                    <button class="btn donate-btn" type="button">Donate Now</button>
-                </div>
-                <div class="donation-card" data-donation-type="Clothing">
-                    <div class="icon"><i class="fa-solid fa-shirt"></i></div>
+            <div class="grid grid-4">
+                <article class="card card-hover feature-card fade-up">
+                    <div class="icon-circle icon-circle--sage"><i class="fa-solid fa-bowl-food"></i></div>
+                    <h3>Food Support</h3>
+                    <p>Provide nutritious meals, hydration, and emergency food packs for families facing hardship.</p>
+                    <div class="donate-metric">1,200+ meals delivered monthly</div>
+                    <a href="#ways-to-help" class="btn-text">Learn More</a>
+                </article>
+                <article class="card card-hover feature-card fade-up">
+                    <div class="icon-circle icon-circle--coral"><i class="fa-solid fa-shirt"></i></div>
                     <h3>Clothing</h3>
-                    <p>Send clean clothes for children and families in need.</p>
-                    <button class="btn donate-btn" type="button">Donate Now</button>
-                </div>
-                <div class="donation-card" data-donation-type="Food">
-                    <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <p>Give children and caregivers clean clothing, blankets, and essentials that restore dignity.</p>
+                    <div class="donate-metric">860+ clothing kits distributed</div>
+                    <a href="#ways-to-help" class="btn-text">Learn More</a>
+                </article>
+                <article class="card card-hover feature-card fade-up">
+                    <div class="icon-circle icon-circle--gold"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Education</h3>
+                    <p>Fund school supplies, tutoring, and learning resources that keep young minds growing.</p>
+                    <div class="donate-metric">300+ children supported in school</div>
+                    <a href="#ways-to-help" class="btn-text">Learn More</a>
+                </article>
+                <article class="card card-hover feature-card fade-up">
+                    <div class="icon-circle icon-circle--blue"><i class="fa-solid fa-hands-holding-child"></i></div>
+                    <h3>Safe Shelter</h3>
+                    <p>Help secure safe spaces, protection, and stability for children and caregivers in crisis.</p>
+                    <div class="donate-metric">140+ families supported with shelter</div>
+                    <a href="#ways-to-help" class="btn-text">Learn More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="ways-to-help">
+        <div class="container">
+            <div class="section-title fade-up">
+                <span class="section-subtitle">Ways to Help</span>
+                <h2>Choose the way you want to give.</h2>
+                <p>Whether you give monthly, contribute supplies, or volunteer your time, your support helps families feel seen and cared for.</p>
+            </div>
+            <div class="grid grid-2 donate-grid">
+                <article class="card card-hover donation-card fade-up" data-donation-type="Monetary Gifts">
+                    <div class="icon-circle icon-circle--sage"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3>Monetary Gifts</h3>
+                    <p>Offer flexible support for meals, shelter, and emergency relief where it is needed most.</p>
+                    <div class="donate-card__actions">
+                        <button class="btn-primary donate-btn" type="button">Donate Now</button>
+                        <a href="about.html" class="btn-text">Learn More</a>
+                    </div>
+                </article>
+                <article class="card card-hover donation-card fade-up" data-donation-type="Clothing">
+                    <div class="icon-circle icon-circle--coral"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Clothing</h3>
+                    <p>Send clean clothing and blankets that bring warmth and immediate comfort.</p>
+                    <div class="donate-card__actions">
+                        <button class="btn-primary donate-btn" type="button">Donate Now</button>
+                        <a href="about.html" class="btn-text">Learn More</a>
+                    </div>
+                </article>
+                <article class="card card-hover donation-card fade-up" data-donation-type="Food">
+                    <div class="icon-circle icon-circle--gold"><i class="fa-solid fa-bowl-food"></i></div>
                     <h3>Food</h3>
-                    <p>Provide nutritious meals for growing children.</p>
-                    <button class="btn donate-btn" type="button">Donate Now</button>
-                </div>
-                <div class="donation-card" data-donation-type="School Supplies">
-                    <div class="icon"><i class="fa-solid fa-book"></i></div>
+                    <p>Provide essential nourishment for children and caregivers in crisis.</p>
+                    <div class="donate-card__actions">
+                        <button class="btn-primary donate-btn" type="button">Donate Now</button>
+                        <a href="about.html" class="btn-text">Learn More</a>
+                    </div>
+                </article>
+                <article class="card card-hover donation-card fade-up" data-donation-type="School Supplies">
+                    <div class="icon-circle icon-circle--blue"><i class="fa-solid fa-book"></i></div>
                     <h3>School Supplies</h3>
-                    <p>Donate books, bags, stationery, and educational materials.</p>
-                    <button class="btn donate-btn" type="button">Donate Now</button>
+                    <p>Equip learners with books, bags, and tools that support brighter futures.</p>
+                    <div class="donate-card__actions">
+                        <button class="btn-primary donate-btn" type="button">Donate Now</button>
+                        <a href="about.html" class="btn-text">Learn More</a>
+                    </div>
+                </article>
+                <article class="card card-hover donation-card fade-up" data-donation-type="Volunteer">
+                    <div class="icon-circle icon-circle--blue"><i class="fa-solid fa-hands-helping"></i></div>
+                    <h3>Volunteer</h3>
+                    <p>Share your time and expertise with communities, outreach teams, and school programs.</p>
+                    <div class="donate-card__actions">
+                        <a href="volunteer.html" class="btn-primary">Get Started</a>
+                        <a href="volunteer.html" class="btn-text">Learn More</a>
+                    </div>
+                </article>
+                <article class="card card-hover donation-card fade-up" data-donation-type="Sponsor a Child">
+                    <div class="icon-circle icon-circle--sage"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Sponsor a Child</h3>
+                    <p>Create a lasting impact through dependable monthly support and personal connection.</p>
+                    <div class="donate-card__actions">
+                        <button class="btn-primary donate-btn" type="button">Donate Now</button>
+                        <a href="about.html" class="btn-text">Learn More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section process-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <span class="section-subtitle">Donation Process</span>
+                <h2>A simple path to meaningful impact.</h2>
+            </div>
+            <div class="timeline fade-up">
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-hand-pointer"></i></div>
+                    <h3>Choose</h3>
+                    <p>Select the gift that matters most to you.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Donate</h3>
+                    <p>Send your contribution securely in minutes.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3>We Deliver</h3>
+                    <p>We coordinate distribution with trusted partners.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-step__icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Lives Changed</h3>
+                    <p>Children receive care, stability, and hope.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section impact-section">
+        <div class="container impact-grid">
+            <div class="impact-image fade-up">
+                <img src="images/cta.jpeg" alt="HopeBridge volunteers supporting a community" loading="lazy">
+            </div>
+            <div class="impact-content fade-up">
+                <span class="section-subtitle">Impact</span>
+                <h2>Real stories. Real care. Measurable change.</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <strong class="counter" data-target="320">0</strong>
+                        <span>Children supported</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong class="counter" data-target="120">0</strong>
+                        <span>Community drives</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong class="counter" data-target="45">0</strong>
+                        <span>Communities reached</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong class="counter" data-target="80">0</strong>
+                        <span>Volunteers active</span>
+                    </div>
+                </div>
+                <p>We measure progress through direct service, transparent reporting, and long-term partnership with trusted local communities.</p>
+            </div>
+        </div>
+        <div class="container testimonial-strip fade-up">
+            <blockquote>“The care and transparency from HopeBridge made it easy to trust that our gift would reach children directly.”</blockquote>
+            <p>— Amina, monthly donor</p>
+        </div>
+    </section>
+
+    <section class="section transparency-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <span class="section-subtitle">Transparency</span>
+                <h2>Accountability you can feel confident in.</h2>
+            </div>
+            <div class="grid grid-2 transparency-grid">
+                <div class="card feature-card fade-up">
+                    <div class="icon-circle icon-circle--sage"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>100% Accountability</h3>
+                    <p>Every gift is tracked and stewarded with care from support to distribution.</p>
+                </div>
+                <div class="card feature-card fade-up">
+                    <div class="icon-circle icon-circle--blue"><i class="fa-solid fa-check-double"></i></div>
+                    <h3>Verified Partnerships</h3>
+                    <p>We work with trusted local organizations and verified community programs.</p>
+                </div>
+                <div class="card feature-card fade-up">
+                    <div class="icon-circle icon-circle--gold"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Donation Tracking</h3>
+                    <p>Donors receive clear updates on the impact of their generosity whenever possible.</p>
+                </div>
+                <div class="card feature-card fade-up">
+                    <div class="icon-circle icon-circle--coral"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Financial Transparency</h3>
+                    <p>Our reporting reflects how funds are directed toward direct support and care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <span class="section-subtitle">Testimonials</span>
+                <h2>Donors who choose to stay involved.</h2>
+            </div>
+            <div class="testimonial-carousel fade-up">
+                <article class="card testimonial-card">
+                    <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>“I gave once and felt so deeply moved by the follow-through that I became a monthly supporter. The trust is real.”</p>
+                    <div class="testimonial-card__author">
+                        <strong>Daniel R.</strong>
+                        <span>Monthly donor</span>
+                    </div>
+                </article>
+                <article class="card testimonial-card">
+                    <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>“The experience felt thoughtful, personal, and clear. It felt like my donation was being handled with care.”</p>
+                    <div class="testimonial-card__author">
+                        <strong>Mariam K.</strong>
+                        <span>Volunteer sponsor</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq-section">
+        <div class="container faq-grid">
+            <div class="fade-up">
+                <span class="section-subtitle">FAQ</span>
+                <h2>Questions donors often ask.</h2>
+                <p>We believe clarity builds trust. Here are answers to the most common concerns.</p>
+            </div>
+            <div class="faq-list fade-up">
+                <details class="faq-item" open>
+                    <summary>How do I know my donation reaches children?</summary>
+                    <p>We work with vetted local partners and maintain careful stewardship so donations are distributed with accountability.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I donate supplies instead of money?</summary>
+                    <p>Yes. Clothing, food, school supplies, and medical essentials are all welcome and directly distributed where needed.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is my contribution tax-deductible?</summary>
+                    <p>Yes, donors can request documentation for eligible contributions through our support team.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-hero">
+        <div class="container">
+            <div class="cta-hero__content fade-up">
+                <h2>Together We Can Build Brighter Futures</h2>
+                <p>Your support helps turn care into action for children, families, and entire communities.</p>
+                <div class="hero-donate__actions">
+                    <a href="#ways-to-help" class="btn-primary">Donate Now</a>
+                    <a href="volunteer.html" class="btn-outline">Volunteer</a>
                 </div>
             </div>
         </div>
