@@ -599,7 +599,14 @@ h1, h2, h3, h4, h5 {
     letter-spacing: -0.02em;
 }
 
-.hero .script { display: none; }
+.hero .script {
+    display: inline;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: inherit;
+    margin-left: 6px;
+    letter-spacing: var(--letter-spacing-heading);
+}
 
 .hero p {
     max-width: var(--content-max);
@@ -1464,6 +1471,26 @@ h1, h2, h3, h4, h5 {
     }
     .timeline-step::after {
         display: none;
+    }
+
+    /* Make mission section stack on tablet and below to avoid horizontal overflow */
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        align-items: start;
+    }
+
+    .mission-image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .mission-content {
+        padding: 0;
     }
 }
 
