@@ -38,19 +38,114 @@
                 </div>
             </div>
             <div class="hero-donate__media fade-up zoom">
-                <img src="images/impact.jpg" alt="Children receiving support from HopeBridge volunteers" loading="eager">
-                <div class="hero-donate__stat hero-donate__stat--top">
-                    <strong>15,000+</strong>
-                    <span>Meals Served</span>
-                </div>
-                <div class="hero-donate__stat hero-donate__stat--bottom">
-                    <strong>2,500+</strong>
-                    <span>Children Helped</span>
-                </div>
-                <div class="hero-donate__stat hero-donate__stat--side">
-                    <strong>500+</strong>
-                    <span>Volunteers</span>
-                </div>
+                <div class="hero-image" role="img" aria-label="Volunteers supporting children" style="background-image:url('images/impact.jpg')"></div>
+                <aside class="campaign-progress card glass" aria-labelledby="campaignTitle">
+                    <div class="campaign-header">
+                        <h3 id="campaignTitle">Feed Children Now</h3>
+                        <small>Transparency. Speed. Local impact.</small>
+                    </div>
+                    <div class="progress-metrics">
+                        <div class="raised"><span class="amount">₦4,250,000</span><small>raised</small></div>
+                        <div class="goal"><span class="amount">₦10,000,000</span><small>goal</small></div>
+                    </div>
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42">
+                        <div class="progress-fill" style="width:42%"></div>
+                    </div>
+                    <div class="mission-brief">
+                        <p>Help provide nutritious meals this quarter. We partner with local kitchens and track every distribution publicly.</p>
+                    </div>
+                    <div class="campaign-actions">
+                        <a class="btn btn-secondary" href="#donationPanel">Donate to Campaign</a>
+                        <a class="btn-text" href="#transparency">View Report</a>
+                    </div>
+                </aside>
+
+                <aside id="donationPanel" class="donation-panel card" aria-labelledby="donationPanelTitle" hidden aria-hidden="true">
+                    <h3 id="donationPanelTitle">Donate Securely</h3>
+                    <form id="donationUI" class="donation-ui" autocomplete="on" novalidate>
+                        <div class="field-row">
+                            <label for="donorNameField">Name</label>
+                            <input id="donorNameField" name="donorName" type="text" placeholder="Your full name" required>
+                        </div>
+                        <div class="field-row">
+                            <label for="donorEmailField">Email</label>
+                            <input id="donorEmailField" name="donorEmail" type="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="field-row">
+                            <label for="campaignSelect">Campaign</label>
+                            <select id="campaignSelect" name="campaign">
+                                <option>Feed Children</option>
+                                <option>School Supplies</option>
+                                <option>Medical Outreach</option>
+                                <option>Emergency Relief</option>
+                            </select>
+                        </div>
+
+                        <div class="currency-row">
+                            <label for="currencySelect">Currency</label>
+                            <select id="currencySelect" name="currency" aria-label="Currency selector">
+                                <option value="NGN">NGN (₦)</option>
+                                <option value="USD">USD ($)</option>
+                                <option value="EUR">EUR (€)</option>
+                                <option value="GBP">GBP (£)</option>
+                                <option value="CAD">CAD (C$)</option>
+                            </select>
+                        </div>
+
+                        <div class="presets" role="radiogroup" aria-label="Preset donation amounts">
+                            <button type="button" class="preset" data-value="2500">₦2,500</button>
+                            <button type="button" class="preset" data-value="5000">₦5,000</button>
+                            <button type="button" class="preset" data-value="10000">₦10,000</button>
+                            <button type="button" class="preset" data-value="50000">₦50,000</button>
+                        </div>
+
+                        <div class="field-row">
+                            <label for="customAmount">Custom amount</label>
+                            <input id="customAmount" name="customAmount" type="number" inputmode="numeric" min="1" placeholder="Enter amount">
+                        </div>
+
+                        <div class="field-row small">
+                            <label>Frequency</label>
+                            <div class="frequency">
+                                <label><input type="radio" name="frequency" value="one" checked> One-time</label>
+                                <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+                                <label><input type="radio" name="frequency" value="quarterly"> Quarterly</label>
+                                <label><input type="radio" name="frequency" value="yearly"> Yearly</label>
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <label for="message">Message (optional)</label>
+                            <textarea id="message" name="message" placeholder="Leave a short message of encouragement"></textarea>
+                        </div>
+
+                        <div class="field-row small">
+                            <label><input id="anonymous" type="checkbox" name="anonymous"> Donate anonymously</label>
+                        </div>
+
+                        <div class="donation-actions">
+                            <button id="flutterwaveBtn" class="btn btn-primary" type="button" aria-label="Donate securely with Flutterwave">Donate Securely with Flutterwave</button>
+                            <div class="trust-badges" aria-hidden="true">
+                                <span class="badge">SSL Secure</span>
+                                <span class="badge">PCI DSS Compliant</span>
+                                <span class="badge">Powered by Flutterwave</span>
+                                <span class="badge">Verified Non-Profit</span>
+                                <span class="badge">100% Transparent Tracking</span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="recent-donors">
+                        <h4>Recent donors</h4>
+                        <ul>
+                            <li><img src="images/flags/de.png" alt="Germany"> Daniel — €30</li>
+                            <li><img src="images/flags/es.png" alt="Spain"> Lucia — €25</li>
+                            <li><img src="images/flags/gb.png" alt="United Kingdom"> James — £50</li>
+                            <li><img src="images/flags/ng.png" alt="Nigeria"> Aisha — ₦5,000</li>
+                            <li><img src="images/flags/ca.png" alt="Canada"> Sophie — C$40</li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
